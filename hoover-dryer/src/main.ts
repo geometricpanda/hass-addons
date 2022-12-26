@@ -9,12 +9,13 @@ mqqtClient.on('connect', async () => {
 
     await dryerEntity.discoveryPublish();
     await dryerEntity.setState(PAYLOAD.STATE_STANDBY);
+    console.info('WAITING FOR MESSAGES');
 });
 
 mqqtClient.on('message', (_topic, _payload) => {
     const topic = _topic.toString() as TOPIC;
     const payload = _payload.toString() as PAYLOAD;
-
+    console.info('MESSAGE', topic, payload);
     const commands: Record<TOPIC, () => void> = {
         [TOPIC.SET]: () => dryerEntity.doCommand(payload),
         [TOPIC.CONFIG]: () => null,

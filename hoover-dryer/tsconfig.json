@@ -2,7 +2,6 @@
     "extends": "./node_modules/@tsconfig/node18/tsconfig.json",
     "compilerOptions": {
         "outDir": "./dist",
-        "outFile": "./dist/main.js",
         "rootDir": "./src",
         "preserveConstEnums": false
     }
