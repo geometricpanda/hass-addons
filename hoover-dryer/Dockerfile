@@ -1,8 +1,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-# Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
+WORKDIR /opt/app
 
-CMD [ "/run.sh" ]
+# Copy data for add-on
+COPY ["dist","node_modules","/"]
+CMD [ "node", "dist/main.js" ]
