@@ -20,8 +20,9 @@ schema:
   mqtt_username: str
   mqtt_password: str
 
-image: repo/{arch}-homeassistant-hoover-dryer
+image: jimdrury/{arch}-homeassistant-hoover-dryer
 
 host_network: true
 
-discovery: mqtt
+discovery:
+  - mqtt
