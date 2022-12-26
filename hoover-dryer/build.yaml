@@ -6,8 +6,6 @@ build_from:
   armhf: "arm32v6/alpine:3.16"
   amd64: "alpine:3.16"
   i386: "i386/alpine:3.16"
-codenotary:
-  signer: jim@jimdrury.co.uk
 args:
   BASHIO_VERSION: 0.14.3
   TEMPIO_VERSION: 2021.09.0
