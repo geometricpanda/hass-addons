@@ -9,6 +9,6 @@ WORKDIR /var/wwww
 COPY ["dist", "node_modules", "package.json", "./"]
 
 COPY run.sh ./
-RUN chmod a+x ./run.sh
 
+CMD [ "ls -als" ]
 CMD [ "./run.sh" ]
