@@ -39,6 +39,7 @@ profile hoover_dryer flags=(attach_disconnected,mediate_deleted) {
     # Access to options.json and other files within your addon
     /data/** rw,
     /usr/app/** rw,
+    /etc/** r,
 
     # Access to mapped volumes specified in config.json
     /share/** rw,
