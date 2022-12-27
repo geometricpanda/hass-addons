@@ -37,7 +37,7 @@ export class SelectEntity {
             name: this.parent.name,
             command_topic: this.command_topic,
             device: this.parent.device,
-            enabled_by_default: false,
+            enabled_by_default: true,
             icon: 'mdi:tumble-dryer',
             state_topic: this.state_topic,
             unique_id: this.parent.id,

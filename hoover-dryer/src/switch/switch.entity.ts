@@ -38,7 +38,7 @@ export class SwitchEntity {
             name: this.parent.name,
             command_topic: this.command_topic,
             device: this.parent.device,
-            enabled_by_default: false,
+            enabled_by_default: true,
             icon: 'mdi:washing-machine',
             payload_on: PAYLOAD.STATE_RUNNING,
             payload_off: PAYLOAD.STATE_STANDBY,
