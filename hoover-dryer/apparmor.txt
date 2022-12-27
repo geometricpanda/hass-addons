@@ -44,6 +44,7 @@ profile hoover_dryer flags=(attach_disconnected,mediate_deleted) {
 
     # Access required for service functionality
     /usr/bin/hoover-dryer r,
+    /usr/bin/node rx,
     /bin/bash rix,
     /bin/echo ix,
     /etc/passwd r,
