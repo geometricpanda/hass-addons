@@ -10,6 +10,8 @@ const {
     MQTT_PASSWORD,
 } = process.env;
 
+console.log(process.env);
+
 export const MQTT_CREDENTIALS: IClientOptions = {
     host: MQTT_HOST,
     port: MQTT_PORT ? +MQTT_PORT : undefined,
