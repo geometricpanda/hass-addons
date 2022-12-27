@@ -11,5 +11,5 @@ RUN chmod -R 777 /usr/bin/hoover-dryer
 RUN chmod -R 777 /usr/bin/node
 RUN chmod -R 777 /usr/app
 
-RUN ["ls", "-als", "/usr/bin"]
-RUN ["ls", "-als", "/etc/services.d/hoover-dryer"]
+RUN ["ls", "-als", "/usr/app"]
+RUN ["ls", "-als", "/usr/app/dist"]
