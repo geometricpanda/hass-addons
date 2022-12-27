@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
+    "start": "node dist/main.js",
+    "serve": "nodemon",
     "build": "tsc --build tsconfig.json"
   },
   "author": "",
