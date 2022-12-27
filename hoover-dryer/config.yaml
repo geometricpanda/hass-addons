@@ -1,7 +1,7 @@
 name: "Hoover Dryer"
 description: "This will allow Hoover Dryer devices to be discovered and controlled."
 
-version: "0.0.40"
+version: "0.0.41"
 
 slug: "hoover_dryer"
 
@@ -13,16 +13,6 @@ arch:
   - armhf
   - armv7
   - i386
-
-#options:
-#  mqtt_host: "homeassistant.local"
-#  mqtt_port: "1883"
-
-#schema:
-#  mqtt_host: str
-#  mqtt_port: str
-#  mqtt_username: str
-#  mqtt_password: password
 
 image: jimdrury/{arch}-homeassistant-hoover-dryer
 
