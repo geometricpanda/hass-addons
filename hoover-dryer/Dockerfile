@@ -9,6 +9,6 @@ RUN apk add --update nodejs npm
 COPY [ "package.json", "dist", "node_modules", "run.sh", "./"]
 RUN chmod a+x ./run.sh
 
-CMD [ "sh", "/opt/app/run.sh" ]
+CMD [ "bashio", "/opt/app/run.sh" ]
 
 
