@@ -5,17 +5,15 @@
 # ==============================================================================
 
 # Declare variables
-declare CONFIG_PATH
 declare MQTT_HOST
 declare MQTT_PORT
 declare MQTT_USERNAME
 declare MQTT_PASSWORD
 
-export CONFIG_PATH=/data/options.json
-export MQTT_HOST="$(bashio::config 'mqtt_host')"
-export MQTT_PORT="$(bashio::config 'mqtt_port')"
-export MQTT_USERNAME="$(bashio::config 'mqtt_username')"
-export MQTT_PASSWORD="$(bashio::config 'mqtt_password')"
+export MQTT_HOST=$(bashio::services mqtt "host")
+export MQTT_USER=$(bashio::services mqtt "username")
+export MQTT_PORT=$(bashio::services mqtt "port")
+export MQTT_PASSWORD=$(bashio::services mqtt "password")
 
 bashio::log.info "Starting Node server..."
 
