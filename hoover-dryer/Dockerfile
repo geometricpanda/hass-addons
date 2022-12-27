@@ -3,8 +3,7 @@ FROM $BUILD_FROM
 
 WORKDIR /opt/app
 
-RUN apk update
-RUN apk add nodejs
+RUN apk add --update nodejs npm
 
 # Copy data for add-on
 COPY [ "dist", "node_modules", "run.sh", "./"]
