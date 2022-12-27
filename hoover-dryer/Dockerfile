@@ -7,6 +7,6 @@ WORKDIR /opt/app
 COPY [ "dist", "node_modules", "run.sh", "./"]
 RUN chmod a+x ./run.sh
 
-CMD [ "./run.sh" ]
+CMD [ "bash", "/opt/app/run.sh" ]
 
 
