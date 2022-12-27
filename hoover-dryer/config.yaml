@@ -1,6 +1,6 @@
 name: "Hoover Dryer"
 description: "This will allow Hoover Dryer devices to be discovered and controlled."
-version: "0.0.14"
+version: "0.0.15"
 slug: "hoover_dryer"
 init: false
 arch:
