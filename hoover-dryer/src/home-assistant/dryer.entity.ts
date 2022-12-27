@@ -1,4 +1,4 @@
-import {mqqtClient} from "./mqqt.client";
+import {mqttClient} from "./mqtt.client";
 import {PAYLOAD, TOPIC} from "./mqqt.interface";
 
 class DryerEntity {
@@ -11,7 +11,7 @@ class DryerEntity {
             command_topic: TOPIC.SET,
             state_topic: TOPIC.STATE,
             device: {
-                name: "Hoover Dryer - switch",
+                name: "Hoover Dryer",
                 manufacturer: "Hoover",
                 model: "NDE H10A2 TCE",
                 suggested_area: "Kitchen",
@@ -24,11 +24,11 @@ class DryerEntity {
             payload_off: PAYLOAD.STATE_STANDBY,
         }
 
-        return mqqtClient.publish(TOPIC.CONFIG, JSON.stringify(deviceConfig));
+        return mqttClient.publish(TOPIC.CONFIG, JSON.stringify(deviceConfig));
     }
 
     setState(state: PAYLOAD) {
-        return mqqtClient.publish(TOPIC.STATE, state);
+        return mqttClient.publish(TOPIC.STATE, state);
     }
 
     doCommand(state: PAYLOAD) {
