@@ -1,2 +1,4 @@
 #!/usr/bin/bash
+echo "Node Starting!" > /share/example_addon_output.txt
+
 node /usr/app/dist/main.js
