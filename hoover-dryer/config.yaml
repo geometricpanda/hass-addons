@@ -1,8 +1,12 @@
 name: "Hoover Dryer"
 description: "This will allow Hoover Dryer devices to be discovered and controlled."
-version: "0.0.17"
+
+version: "0.0.18"
+
 slug: "hoover_dryer"
+
 init: false
+
 arch:
   - aarch64
   - amd64
