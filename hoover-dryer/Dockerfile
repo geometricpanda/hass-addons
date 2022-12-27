@@ -5,7 +5,7 @@ WORKDIR /opt/app
 
 # Copy data for add-on
 COPY [ "dist", "node_modules", "run.sh", "/"]
-RUN chmod a+x /run.sh
+RUN chmod a+x ./run.sh
 
 CMD [ "./run.sh" ]
 
